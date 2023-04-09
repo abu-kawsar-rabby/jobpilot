@@ -1,0 +1,14 @@
+.job{
+    border: 1px solid #E8E8E8;;
+    padding: 20px;
+    border-radius: 8px;
+}
+.link>a{
+    color: blue;
+    font-weight: 600;
+    margin-right: 5px;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+

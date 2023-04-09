@@ -11,9 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-Banner
-JobCategorys
-Job
 
 # Editor directories and files
 .vscode/*
