@@ -1,0 +1,12 @@
+.details-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.info-container {
+    margin: 0 10px;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.1) 0%, rgba(152, 115, 255, 0.1) 100%);
+    border-radius: 8px;
+}

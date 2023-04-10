@@ -1,13 +1,14 @@
 import React from 'react';
 import './JobCategoryList.css';
-import accImage from '../../assets/Icons/accounts.png'
 
-const JobCategoryList = () => {
+const JobCategoryList = ({ job }) => {
+    const { category, category_icon } = job.job_info;
+    const { open_positions } = job;
     return (
         <div id='box'>
-            <img src={accImage} alt="" />
-            <h5 className='font-bold text-black'>Account & Finance</h5>
-            <p>300 Jobs Available</p>
+            <img src={category_icon} alt="" />
+            <h5 className='font-bold text-black'>{category}</h5>
+            <p>{open_positions} Jobs Available</p>
         </div>
     );
 };

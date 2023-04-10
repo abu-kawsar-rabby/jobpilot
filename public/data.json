@@ -1,0 +1,165 @@
+[
+    {
+        "id": 1,
+        "job_info": {
+            "job_title": "Front-End Developer",
+            "category": "Social Media Marketing",
+            "category_icon": "../src/assets/Icons/data.png"
+        },
+        "company": {
+            "name": "Airbnb",
+            "logo": "../src/assets/Logo/airbnb.png",
+            "phone": "+1 (123) 456-7890",
+            "email": "jobs@airbnb.com",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            }
+        },
+        "workplace": "Remote",
+        "work_type": "Full-time",
+        "salary": "$80,000 - $100,000",
+        "educational_requirements": "Bachelor's Degree in Computer Science or related field",
+        "experiences": "3+ years of experience in front-end development",
+        "description": "We are looking for a skilled front-end developer to join our team at Airbnb. You will be responsible for developing and maintaining the front-end of our web applications, ensuring a seamless user experience for our customers. The ideal candidate will have experience with modern front-end technologies and frameworks, and a strong understanding of responsive design principles.",
+        "responsibilities": "Develop and maintain the front-end of our web applications. Work closely with our design team to ensure a seamless user experience. Optimize our applications for maximum speed and scalability. Write clean, modular, and testable code. Collaborate with back-end developers and other team members to ensure a cohesive product. Stay up-to-date with emerging trends and technologies in front-end development.",
+        "open_positions": 3
+    },
+    {
+        "id": 2,
+        "job_info": {
+            "job_title": "Data Analyst",
+            "category": "Data Science",
+            "category_icon": "../src/assets/Icons/data-science.svg"
+        },
+        "company": {
+            "name": "Tesla",
+            "logo": "../src/assets/Logo/tesla.png",
+            "phone": "+1 (123) 456-7890",
+            "email": "jobs@tesla.com",
+            "location": {
+                "city": "Toronto",
+                "state": "Ontario",
+                "country": "Canada"
+            }
+        },
+        "workplace": "Onsite",
+        "work_type": "Full-time",
+        "salary": "$70,000 - $90,000",
+        "educational_requirements": "Bachelor's Degree in Mathematics, Statistics or related field",
+        "experiences": "2+ years of experience in data analysis",
+        "description": "We are looking for a data analyst to join our team at Tesla. You will be responsible for analyzing large datasets and providing insights to inform business decisions. The ideal candidate will have experience working with SQL and Python, and a strong understanding of statistical analysis.",
+        "responsibilities": "Analyze large datasets to identify trends and patterns. Build models to predict future trends and behaviors. Communicate insights and findings to stakeholders. Work closely with other members of the data team to ensure data accuracy and completeness. Stay up-to-date with emerging trends and technologies in data analysis.",
+        "open_positions": 1
+    },
+    {
+        "id": 3,
+        "job_info": {
+            "job_title": "Software Engineer",
+            "category": "Information Technology",
+            "category_icon": "../src/assets/Icons/engineering.png"
+        },
+        "company": {
+            "name": "Google",
+            "logo": "../src/assets/Logo/google.png",
+            "phone": "+1 (123) 456-7890",
+            "email": "jobs@google.com",
+            "location": {
+                "city": "Mountain View",
+                "state": "CA",
+                "country": "USA"
+            }
+        },
+        "workplace": "Onsite",
+        "work_type": "Full-time",
+        "salary": "$120,000 - $150,000",
+        "educational_requirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "3+ years of experience in software engineering",
+        "description": "We are seeking a highly skilled software engineer to join our team. In this role, you will work on cutting-edge technology and collaborate with a team of talented engineers to solve complex problems.",
+        "responsibilities": "As a software engineer at Google, you will be responsible for designing, developing, and testing software that powers some of the world's most popular applications. You will also work closely with product managers and other stakeholders to understand user needs and translate them into technical requirements.",
+        "open_positions": 1
+    },
+    {
+        "id": 4,
+        "job_info": {
+            "job_title": "Product Manager",
+            "category": "Business",
+            "category_icon": "../src/assets/Icons/accounts.png"
+        },
+        "company": {
+            "name": "Amazon",
+            "logo": "https://www.freepnglogos.com/uploads/amazon-png-logo-vector/woodland-gardening-amazon-png-logo-vector-8.png",
+            "phone": "+1 (123) 456-7890",
+            "email": "jobs@amazon.com",
+            "location": {
+                "city": "Seattle",
+                "state": "WA",
+                "country": "USA"
+            }
+        },
+        "workplace": "Onsite",
+        "work_type": "Full-time",
+        "salary": "$100,000 - $130,000",
+        "educational_requirements": "Bachelor's Degree in Business Administration, Marketing or related field",
+        "experiences": "5+ years of experience in product management",
+        "description": "Amazon is seeking a talented and experienced product manager to join our team. You will be responsible for defining and launching new products, as well as improving existing ones. The ideal candidate will have a strong understanding of customer needs and market trends, as well as experience in product development and launch.",
+        "responsibilities": "Define and prioritize product features based on customer needs and market trends. Work closely with engineering and design teams to develop and launch new products. Define and track product metrics to measure success. Continuously improve existing products through data analysis and customer feedback. Collaborate with cross-functional teams to ensure successful product launches.",
+        "open_positions": 2
+    },
+    {
+        "id": 5,
+        "job_info": {
+            "job_title": "Sales Representative",
+            "category": "Sales",
+            "category_icon": "../src/assets/Icons/sales.png"
+        },
+        "company": {
+            "name": "Microsoft",
+            "logo": "https://www.freepnglogos.com/uploads/microsoft-logo-4.png",
+            "phone": "+1 (123) 456-7890",
+            "email": "jobs@microsoft.com",
+            "location": {
+                "city": "Redmond",
+                "state": "WA",
+                "country": "USA"
+            }
+        },
+        "workplace": "Remote",
+        "work_type": "Full-time",
+        "salary": "$80,000 - $100,000",
+        "educational_requirements": "Bachelor's Degree in Business or related field",
+        "experiences": "3+ years of experience in sales",
+        "description": "We are looking for a Sales Representative to join our team at Microsoft. You will be responsible for generating new business and maintaining existing relationships with clients. The ideal candidate will have experience in B2B sales and a strong understanding of technology products.",
+        "responsibilities": "Generate new business by prospecting and qualifying leads. Maintain and grow existing client relationships. Collaborate with cross-functional teams to deliver solutions to clients. Meet and exceed sales quotas. Stay up-to-date with emerging trends and technologies in sales.",
+        "open_positions": 1
+    },
+    {
+        "id": 6,
+        "job_info": {
+            "job_title": "iOS Developer",
+            "category": "Software Development",
+            "category_icon": "../src/assets/Icons/engineering.png"
+        },
+        "company": {
+            "name": "Apple",
+            "logo": "https://www.freepnglogos.com/uploads/apple-logo-png/file-apple-logo-black-svg-wikimedia-commons-1.png",
+            "phone": "+1 (123) 456-7890",
+            "email": "jobs@apple.com",
+            "icon": "https://example.com/apple-icon.png",
+            "location": {
+                "city": "Cupertino",
+                "state": "California",
+                "country": "USA"
+            }
+        },
+        "workplace": "Onsite",
+        "work_type": "Part-time",
+        "salary": "$100,000 - $120,000",
+        "educational_requirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "2+ years of experience in iOS app development",
+        "description": "We are seeking an experienced iOS developer to join our team at Apple. In this role, you will be responsible for developing and maintaining our iOS apps. The ideal candidate will have experience with Swift and Objective-C, and a deep understanding of iOS design principles and guidelines.",
+        "responsibilities": "Design and build advanced applications for the iOS platform. Collaborate with cross-functional teams to define, design, and ship new features. Unit-test code for robustness, including edge cases, usability, and general reliability. Continuously discover, evaluate, and implement new technologies to maximize development efficiency. Work on bug fixing and improving application performance.",
+        "open_positions": 3
+    }
+]

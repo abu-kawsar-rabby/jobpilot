@@ -7,7 +7,7 @@ const Banner = () => {
         <div className='flex justify-between'>
             <div className='flex items-center'>
                 <div>
-                    <h1 className='font-semibold text-6xl leading-[70px] my-10'>
+                    <h1 className='font-semibold text-6xl text-black leading-[70px] my-10'>
                         One Step <br />
                         Closer To Your<br />
                         <span className='text-[#7E90FE]'>Dream Job</span>

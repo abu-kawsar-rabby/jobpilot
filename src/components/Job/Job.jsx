@@ -1,19 +1,41 @@
 import React from 'react';
 import googleimg from '../../assets/Logo/google-1.png';
+import locationicon from '../../assets/Icons/Location_Icon.png';
+import dollaricon from '../../assets/Icons/dollar_black.png';
 import './Job.css'
+import { useNavigate } from 'react-router-dom';
 
-const Job = () => {
+
+const Job = ({ job }) => {
+
+    const { salary, workplace, work_type } = job;
+    const { job_title } = job.job_info;
+    const { logo, name } = job.company;
+    const { city, state, country } = job.company.location;
+    console.log(job)
+
+    const navigate = useNavigate();
+
+    const handleNavigation = () => {
+        navigate('../job_details');
+    }
     return (
         <div className='job'>
-            <img src={googleimg} alt="" />
-            <h2 className='text-bold mt-3 text-black'>Technical Database Engineer</h2>
-            <p className='font-semibold'>google LLC</p>
+            <img src={logo} alt="" />
+            <h2 className='text-bold mt-3 text-black'>{job_title}</h2>
+            <p className='font-semibold'>{name}</p>
             <div className="link my-4">
-                <a href="">Remote</a>
-                <a href="">Fulltime</a>
+                <a href="">{workplace}</a>
+                <a href="">{work_type}</a>
             </div>
-            <p className='my-2'>locaiton: Dhaka bd</p>
-            <button className='rounded'>View Details</button>
+            <div className="flex gap-3">
+                <p className='my-2 flex font-semibold'>
+                    <img className='mr-1' src={locationicon} alt="" /> {city}, {state}, {country}</p>
+                <p className='flex items-center font-semibold'>
+                    <img className='h-5 mr-1' src={dollaricon} alt="" /> Salary : {salary}
+                </p>
+            </div>
+            <button onClick={handleNavigation} className='rounded'>View Details</button>
         </div>
     );
 };
