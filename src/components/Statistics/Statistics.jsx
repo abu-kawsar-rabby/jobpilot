@@ -3,6 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import Header from '../Header/Header';
 
 
+
 const Statistics = () => {
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
@@ -20,19 +21,25 @@ const Statistics = () => {
 
     return (
         <div>
-            <Header></Header>
-            <h1>this is statistics page</h1>
-            <LineChart
-                width={500}
-                height={300}
-                data={assignmentMarks}
-            >
-                <XAxis></XAxis>
-                <YAxis></YAxis>
-                <Tooltip></Tooltip>
-                <Line type="monotone" dataKey="marks" stroke="#82ca9d" />
+            <Header
+                props="Statistics"
+            ></Header>
+            <ResponsiveContainer
+                width="100%"
+                height="100%">
+                <LineChart
+                    width={500}
+                    height={300}
+                    data={assignmentMarks}
+                >
+                    <XAxis></XAxis>
+                    <YAxis></YAxis>
+                    <Tooltip></Tooltip>
+                    <Line type="monotone" dataKey="marks" stroke="#82ca9d" />
 
-            </LineChart>
+                </LineChart>
+            </ResponsiveContainer>
+
         </div>
     );
 };

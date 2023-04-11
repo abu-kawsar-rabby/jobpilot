@@ -4,7 +4,7 @@ import JobCategorys from '../JobCategorys/JobCategorys';
 import './Home.css';
 import Jobs from '../Jobs/Jobs';
 import { useLoaderData } from 'react-router-dom';
-import Header from '../Header/Header';
+import Header from '../Navbar/Navbar';
 
 export const DataContext = createContext([]);
 

@@ -2,31 +2,54 @@ import { useEffect, useState } from 'react';
 import AppliedJob from '../AppliedJob/AppliedJob';
 import { getAppliedJobList } from '../../../utilities/fakedb';
 import Header from '../Header/Header';
-import VectorBtn from '../../assets/images/Vector.png'
-import VectorTop from '../../assets/images/Vector-1.png'
 
 const AppliedJobs = () => {
 
 
     const jobsList = getAppliedJobList();
 
+    const [workplaceFilter, setWorkplaceFilter] = useState([]);
+    console.log(workplaceFilter, "12-line")
+
+
+    const handleWorkplaceChange = (event) => {
+        const selectedWorkplace = event.target.value;
+        const filteredWorkplace = jobsList.filter(job => job.workplace === selectedWorkplace);
+        setWorkplaceFilter(filteredWorkplace)
+    };
+
 
     return (
         <div>
-            <div className='job-details-banner pb-16 mb-16 relative'>
-                <img className='absolute top-0 right-0' src={VectorTop} alt="" />
-                <Header></Header>
-                <h1 className='my-20 text-center text-2xl font-bold text-black'>Applied Jobs</h1>
-                <img className='absolute bottom-0 left-0' src={VectorBtn} alt="" />
+            <Header
+                props="Applied Jobs"
+            ></Header>
+            <div className='text-right px-5 md:px-36 mb-5'>
+                <select
+                    className='px-5 py-3 font-bold bg-[#F4F4F4] rounded-lg'
+                    onChange={handleWorkplaceChange}
+                    defaultValue=""
+                >
+                    <option value="" disabled>Filter By</option>
+                    <option className='font-bold' value="Onsite">Onsite</option>
+                    <option className='font-bold' value="Remote">Remote</option>
+                </select>
+
+
             </div>
             <div className="px-5 md:px-36">
-                {
-                    jobsList.length === 0
+                {workplaceFilter.length === 0
+                    ? jobsList.length === 0
                         ? <h1 className='text-center font-bold text-xl'>You don't apply any job yet</h1>
                         : jobsList.map(job => <AppliedJob
                             key={job.id}
                             job={job}
                         ></AppliedJob>)
+                    : workplaceFilter.map(job => <AppliedJob
+                        key={job.id}
+                        job={job}
+                    ></AppliedJob>)
+
                 }
             </div>
         </div>
