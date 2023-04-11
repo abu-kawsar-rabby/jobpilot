@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const addToDb = job => {
     let appliedJobList = [];
 
@@ -7,9 +9,18 @@ const addToDb = job => {
         appliedJobList = previousList;
     }
 
-    appliedJobList.push(job);
+    // Check if the job already exists in the array
+    const jobExists = appliedJobList.some(item => item.id === job.id);
 
-    localStorage.setItem('applied-jobs', JSON.stringify(appliedJobList));
+    // Add the job to the array only if it doesn't already exist
+    if (jobExists) {
+        toast("you have already applied for this job")
+    }
+    else if (!jobExists) {
+        appliedJobList.push(job);
+        localStorage.setItem('applied-jobs', JSON.stringify(appliedJobList));
+        toast('applied job succesfully done');
+    }
 };
 
 
@@ -37,7 +48,7 @@ const getAppliedJobList = () => {
 };
 
 
-const deleteShoppingCart = () => {
+const deleteAppliedJobList = () => {
     localStorage.removeItem('applied-jobs');
 }
 
@@ -45,5 +56,5 @@ export {
     addToDb,
     removeFromDb,
     getAppliedJobList,
-    deleteShoppingCart
+    deleteAppliedJobList
 }

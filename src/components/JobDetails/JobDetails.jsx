@@ -7,6 +7,8 @@ import addressicon from '../../assets/Icons/address.png';
 import './JobDetails.css'
 import { useParams } from 'react-router-dom';
 import { addToDb } from '../../../utilities/fakedb';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetails = () => {
 
@@ -53,6 +55,7 @@ const JobDetails = () => {
                     <p>{experiences}</p>
                 </div>
                 <div className='info-container'>
+                    <ToastContainer></ToastContainer>
                     <h1 className='my-5 text-xl font-bold border-b pb-2 text-black'>Job Details</h1>
                     <p className='flex items-center'>
                         <img className='h-5 mr-1' src={dollaricon} alt="" /><span className='font-bold mr-1'>Salary : </span> {salary}
