@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='flex justify-between'>
+        <nav className='flex justify-between'>
             <a href="/"><h2 className='font-bold text-3xl text-black'>JobPilot</h2></a>
             <div className='flex justify-evenly items-center'>
                 <Link className='mr-5' to='/statistics'>Statistics</Link>
@@ -13,7 +13,7 @@ const Header = () => {
             <div>
                 <button>Star Applying</button>
             </div>
-        </div>
+        </nav>
     );
 };
 

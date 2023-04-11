@@ -7,7 +7,7 @@ import instagramLogo from '../../assets/Icons/instagram.svg';
 
 const Footer = () => {
     return (
-        <div className='footer-container mt-10 px-28 pt-10 pb-3'>
+        <div className='footer-container mt-20 px-28 pt-10 pb-3'>
             <div className='footer-content'>
                 <div>
                     <h1 className='text-white text-3xl font-bold'>JobPilot</h1>
