@@ -17,7 +17,7 @@ const AppliedJob = ({ job }) => {
     const navigate = useNavigate();
 
     const handleNavigation = (id) => {
-        navigate(`../job_detail/${id}`);
+        navigate(`../job/${id}`);
     }
     return (
         <div className='flex items-center justify-between job mb-5'>
