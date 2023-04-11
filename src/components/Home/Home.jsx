@@ -8,7 +8,7 @@ import { useLoaderData } from 'react-router-dom';
 export const DataContext = createContext([]);
 
 const Home = () => {
-
+    
     const datas = useLoaderData();
 
     return (

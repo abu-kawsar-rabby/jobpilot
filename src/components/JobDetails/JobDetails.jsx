@@ -1,48 +1,76 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import dollaricon from '../../assets/Icons/dollar_black.png';
 import jobicon from '../../assets/Icons/job_title.png';
 import phoneicon from '../../assets/Icons/phone.png';
 import emailicon from '../../assets/Icons/email.png';
 import addressicon from '../../assets/Icons/address.png';
 import './JobDetails.css'
+import { useParams } from 'react-router-dom';
+import { addToDb } from '../../../utilities/fakedb';
 
 const JobDetails = () => {
+
+    const { jobId } = useParams();
+
+    const [job, setJob] = useState(null);
+    const [jobs, setJobs] = useState([]);
+
+    useEffect(() => {
+        fetch("/jobs.json")
+            .then(res => res.json())
+            .then(data => setJobs(data))
+    }, [])
+
+    useEffect(() => {
+        const selectedJob = jobs.find(job => job.id == jobId);
+        if (selectedJob) {
+            setJob(selectedJob);
+        }
+    }, [jobs, jobId])
+
+    const { id, description, experiences, responsibilities, educational_requirements, salary, job_info, company } = job ?? {};
+
+    const { job_title } = job_info ?? {};
+    const { phone, email, location } = company ?? {};
+    const { city, state, country } = location ?? {};
+
+
+
     return (
         <div>
             <h1 className='my-10 text-center text-2xl font-bold text-black'>Job Details</h1>
             <div className='details-container'>
                 <div>
                     <p>
-                        <span className='font-bold'>Job Description:</span> A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.
+                        <span className='font-bold'>Job Description:</span> {description}
                     </p>
                     <p className='py-5'>
-                        <span className='font-bold'>Job Responsibility:</span> Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.
+                        <span className='font-bold'>Job Responsibility:</span> {responsibilities}
                     </p>
                     <h6 className='font-bold'>Educational Requirements:</h6>
-                    <p>Bachelor degree to complete any reputational university.</p>
+                    <p>{educational_requirements}</p>
                     <h6 className='font-bold mt-3'>Experiences:</h6>
-                    <p>2-3 Years in this field.</p>
+                    <p>{experiences}</p>
                 </div>
                 <div className='info-container'>
                     <h1 className='my-5 text-xl font-bold border-b pb-2 text-black'>Job Details</h1>
                     <p className='flex items-center'>
-                        <img className='h-5 mr-1' src={dollaricon} alt="" /><span className='font-bold mr-1'>Salary : </span> 100K - 150K
+                        <img className='h-5 mr-1' src={dollaricon} alt="" /><span className='font-bold mr-1'>Salary : </span> {salary}
                     </p>
                     <p className='flex items-center'>
-                        <img className='h-5 mr-1' src={jobicon} alt="" /><span className='font-bold mr-1'>Job Title :</span> Product Designer
+                        <img className='h-5 mr-1' src={jobicon} alt="" /><span className='font-bold mr-1'>Job Title :</span> {job_title}
                     </p>
                     <h1 className='my-5 text-xl font-bold border-b pb-2 text-black'>Contact Information</h1>
                     <p className='flex items-center'>
-                        <img className='h-5 mr-1' src={phoneicon} alt="" /><span className='font-bold mr-1'>Phone : </span>01750-00 00 00
+                        <img className='h-5 mr-1' src={phoneicon} alt="" /><span className='font-bold mr-1'>Phone : </span>{phone}
                     </p>
                     <p className='flex items-center'>
-                        <img className='h-5 mr-1' src={emailicon} alt="" /><span className='font-bold mr-1'> Email : </span>info@gmail.com
+                        <img className='h-5 mr-1' src={emailicon} alt="" /><span className='font-bold mr-1'> Email : </span>{email}
                     </p>
                     <p className='flex items-center'>
-                        <img className='h-5 mr-1' src={addressicon} alt="" /><span className='font-bold mr-1'>Address :</span>Dhanmondi 32, Sukrabad
-                        Dhaka, Bangladesh
+                        <img className='h-5 mr-1' src={addressicon} alt="" /><span className='font-bold mr-1'>Address :</span>{city}, {state}, {country}
                     </p>
-                    <button className='mt-4 w-full'>Apply Now</button>
+                    <button onClick={() => addToDb(job)} className='mt-4 w-full'>Apply Now</button>
                 </div>
             </div>
 

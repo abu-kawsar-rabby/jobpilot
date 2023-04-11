@@ -8,16 +8,15 @@ import { useNavigate } from 'react-router-dom';
 
 const Job = ({ job }) => {
 
-    const { salary, workplace, work_type } = job;
+    const { id, salary, workplace, work_type } = job;
     const { job_title } = job.job_info;
     const { logo, name } = job.company;
     const { city, state, country } = job.company.location;
-    console.log(job)
 
     const navigate = useNavigate();
 
-    const handleNavigation = () => {
-        navigate('../job_details');
+    const handleNavigation = (id) => {
+        navigate(`../job_detail/${id}`);
     }
     return (
         <div className='job'>
@@ -35,7 +34,7 @@ const Job = ({ job }) => {
                     <img className='h-5 mr-1' src={dollaricon} alt="" /> Salary : {salary}
                 </p>
             </div>
-            <button onClick={handleNavigation} className='rounded'>View Details</button>
+            <button onClick={() => handleNavigation(id)} className='rounded'>View Details</button>
         </div>
     );
 };
