@@ -20,3 +20,15 @@
     fill: linear-gradient(133.75deg, #FBE18A 5.93%, #FCBB45 24.42%, #F75274 39.25%, #D53692 52.33%, #8F39CE 71.47%, #5B4FE9 94.6%);
 
 }
+
+@media only screen and (max-width: 600px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .company-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

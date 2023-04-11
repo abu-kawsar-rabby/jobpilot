@@ -4,11 +4,12 @@ import JobCategorys from '../JobCategorys/JobCategorys';
 import './Home.css';
 import Jobs from '../Jobs/Jobs';
 import { useLoaderData } from 'react-router-dom';
+import Header from '../Header/Header';
 
 export const DataContext = createContext([]);
 
 const Home = () => {
-    
+
     const datas = useLoaderData();
 
     return (
@@ -16,9 +17,16 @@ const Home = () => {
             <DataContext.Provider
                 value={datas}
             >
-                <Banner></Banner>
-                <JobCategorys></JobCategorys>
-                <Jobs></Jobs>
+                <div id='banner'>
+                    <Header></Header>
+                    <div className="px-5 md:px-36">
+                        <Banner></Banner>
+                    </div>
+                </div>
+                <div className="px-5 md:px-36">
+                    <JobCategorys></JobCategorys>
+                    <Jobs></Jobs>
+                </div>
             </DataContext.Provider>
         </div>
     );

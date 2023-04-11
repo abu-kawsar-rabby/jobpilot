@@ -9,6 +9,9 @@ import { useParams } from 'react-router-dom';
 import { addToDb } from '../../../utilities/fakedb';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Header from '../Header/Header';
+import VectorBtn from '../../assets/images/Vector.png'
+import VectorTop from '../../assets/images/Vector-1.png'
 
 const JobDetails = () => {
 
@@ -40,8 +43,13 @@ const JobDetails = () => {
 
     return (
         <div>
-            <h1 className='my-10 text-center text-2xl font-bold text-black'>Job Details</h1>
-            <div className='details-container'>
+            <div className='job-details-banner pb-16 mb-16 relative'>
+                <img className='absolute top-0 right-0' src={VectorTop} alt="" />
+                <Header></Header>
+                <h1 className='my-20 text-center text-2xl font-bold text-black'>Job Details</h1>
+                <img className='absolute bottom-0 left-0' src={VectorBtn} alt="" />
+            </div>
+            <div className='details-container px-5 md:px-36'>
                 <div>
                     <p>
                         <span className='font-bold'>Job Description:</span> {description}

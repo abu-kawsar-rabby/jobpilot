@@ -1,5 +1,6 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import Header from '../Header/Header';
 
 
 const Statistics = () => {
@@ -19,6 +20,7 @@ const Statistics = () => {
 
     return (
         <div>
+            <Header></Header>
             <h1>this is statistics page</h1>
             <LineChart
                 width={500}
