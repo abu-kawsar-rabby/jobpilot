@@ -26,14 +26,6 @@ const addToDb = job => {
 
 
 
-const removeFromDb = id => {
-    const appliedJobList = getAppliedJobList();
-    if (id in appliedJobList) {
-        delete appliedJobList[id];
-        localStorage.setItem('applied-job', JSON.stringify(appliedJobList));
-    }
-}
-
 
 const getAppliedJobList = () => {
     let appliedJobList = [];
@@ -48,13 +40,8 @@ const getAppliedJobList = () => {
 };
 
 
-const deleteAppliedJobList = () => {
-    localStorage.removeItem('applied-jobs');
-}
 
 export {
     addToDb,
-    removeFromDb,
     getAppliedJobList,
-    deleteAppliedJobList
 }

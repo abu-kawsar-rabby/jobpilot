@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
 
 
-            <div className='flex justify-between my-10 py-5 border-t'>
+            <div className='flex justify-between mt-10 py-5 border-t'>
                 <p>@{new Date().getFullYear()} <span className='font-semibold'>{document.title}</span>. All Rights Reserved</p>
                 <p>Powered by <span className='font-semibold'>{document.title}</span></p>
             </div>
