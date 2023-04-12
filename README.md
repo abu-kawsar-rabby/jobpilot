@@ -2,7 +2,7 @@
 
 These websites typically allow users to search and apply for jobs based on different criteria such as job title, industry, location, and experience level.
 
-# LIVE SITE LINK:
+## LIVE SITE LINK:
 netlify : https://earnest-fairy-fc3b61.netlify.app
 
 ## Features
@@ -48,7 +48,7 @@ netlify : https://earnest-fairy-fc3b61.netlify.app
 
 ## Support
 
-Email:live@support.com
+Email: live@support.com.
 
 
 
