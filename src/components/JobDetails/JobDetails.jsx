@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import dollaricon from '../../assets/Icons/dollar_black.png';
+import dollaricon from '../../assets/Icons/dollar.png';
 import jobicon from '../../assets/Icons/job_title.png';
 import phoneicon from '../../assets/Icons/phone.png';
 import emailicon from '../../assets/Icons/email.png';

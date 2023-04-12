@@ -1,0 +1,26 @@
+[
+    {
+        "category_id": 1,
+        "category_logo": "https://i.ibb.co/X5qhYxQ/software.png",
+        "category_name": "Software Development",
+        "jobs_available": 25
+    },
+    {
+        "category_id": 2,
+        "category_logo": "https://i.ibb.co/b6y1ncN/marketing.png",
+        "category_name": "Marketing",
+        "jobs_available": 18
+    },
+    {
+        "category_id": 3,
+        "category_logo": "https://i.ibb.co/y5qm04L/design.png",
+        "category_name": "Graphic Design",
+        "jobs_available": 18
+    },
+    {
+        "category_id": 4,
+        "category_logo": "https://i.ibb.co/R4ygcmp/finance.png",
+        "category_name": "Finance",
+        "jobs_available": 12
+    }
+]

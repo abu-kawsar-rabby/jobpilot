@@ -1,10 +1,20 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import JobCategoryList from '../JobCategoryList/JobCategoryList';
-import { DataContext } from '../Home/Home';
 
 const JobCategorys = () => {
 
-    const datas = useContext(DataContext);
+    const [categorys, setCategorys] = useState([]);
+
+    console.log(categorys, "line 8")
+
+    useEffect(() => {
+        fetch('categorys.json')
+            .then(res => res.json())
+            .then(data => setCategorys(data))
+    }, [])
+
+    console.log(categorys, "line 16")
+
 
     return (
         <div className='my-20'>
@@ -12,9 +22,9 @@ const JobCategorys = () => {
             <p className='my-2 text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             <div className="grid grid-cols-2 md:grid-cols-4 mt-10 gap-4">
                 {
-                    datas.slice(0, 4).map(job => <JobCategoryList
-                        key={job.id}
-                        job={job}
+                    categorys.map(category => <JobCategoryList
+                        key={category.category_id}
+                        category={category}
                     ></JobCategoryList>)
                 }
             </div>

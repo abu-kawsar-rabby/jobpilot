@@ -8,7 +8,7 @@
         },
         "company": {
             "name": "Airbnb",
-            "logo": "../src/assets/Logo/airbnb.png",
+            "logo": "https://i.ibb.co/PFWFvvt/airbnb.png",
             "phone": "+1 (123) 456-7890",
             "email": "jobs@airbnb.com",
             "location": {
@@ -35,7 +35,7 @@
         },
         "company": {
             "name": "Tesla",
-            "logo": "../src/assets/Logo/tesla.png",
+            "logo": "https://i.ibb.co/Ksw4LKZ/tesla.png",
             "phone": "+1 (123) 456-7890",
             "email": "jobs@tesla.com",
             "location": {
@@ -62,7 +62,7 @@
         },
         "company": {
             "name": "Google",
-            "logo": "../src/assets/Logo/google.png",
+            "logo": "https://i.ibb.co/QXkRTbt/google.png",
             "phone": "+1 (123) 456-7890",
             "email": "jobs@google.com",
             "location": {
