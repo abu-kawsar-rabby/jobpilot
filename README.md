@@ -14,7 +14,7 @@ netlify : https://earnest-fairy-fc3b61.netlify.app
 - job category
   
 
-  ## Installation
+## Installation
 
 1. Clone the repository https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-abu-kawsar-rabby
 2. Install the dependencies with `npm install`
@@ -23,14 +23,13 @@ netlify : https://earnest-fairy-fc3b61.netlify.app
 ## Usage
 
 1. Open a web browser and navigate to `http://localhost:3000`
-2. Click on the "Login" button to sign in to your account
-3. Browse the available content and interact with the interface
+2. Browse the available content and interact with the interface
 
 ## API Reference
 
 
-- `/api/users` - returns a list of all categorylist in the database
-- `/api/posts` - returns a list of all joblist in the database
+- `public/categorys` - returns a list of all categorylist in the database
+- `public/jobs` - returns a list of all joblist in the database
 
 ## Tests
 
