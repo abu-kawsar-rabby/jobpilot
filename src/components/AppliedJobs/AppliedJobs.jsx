@@ -24,19 +24,21 @@ const AppliedJobs = () => {
             <Header
                 props="Applied Jobs"
             ></Header>
-            <div className='text-right px-5 md:px-36 mb-5'>
-                <select
-                    className='px-5 py-3 font-bold bg-[#F4F4F4] rounded-lg'
-                    onChange={handleWorkplaceChange}
-                    defaultValue=""
-                >
-                    <option value="" disabled>Filter By</option>
-                    <option className='font-bold' value="Onsite">Onsite</option>
-                    <option className='font-bold' value="Remote">Remote</option>
-                </select>
-
-
-            </div>
+            {
+                jobsList.length === 0
+                    ? ''
+                    : <div className='text-right px-5 md:px-36 mb-5'>
+                        <select
+                            className='px-5 py-3 font-bold bg-[#F4F4F4] rounded-lg'
+                            onChange={handleWorkplaceChange}
+                            defaultValue=""
+                        >
+                            <option value="" disabled>Filter By</option>
+                            <option className='font-bold' value="Onsite">Onsite</option>
+                            <option className='font-bold' value="Remote">Remote</option>
+                        </select>
+                    </div>
+            }
             <div className="px-5 md:px-36">
                 {workplaceFilter.length === 0
                     ? jobsList.length === 0
