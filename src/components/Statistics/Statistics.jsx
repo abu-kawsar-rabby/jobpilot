@@ -58,7 +58,7 @@ const Statistics = () => {
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
             return (
-                <div className="py-3 px-5 bg-white">
+                <div className="py-3 px-5 rounded-md bg-white">
                     <p className="font-semibold">{getIntroOfPage(label)}</p>
                     <p className="label">{`Obtain Mark: ${payload[0].value}`}</p>
                 </div>
@@ -75,7 +75,7 @@ const Statistics = () => {
                 props="Statistics"
             ></Header>
 
-            <div className='pr-5 md:px-36 flex justify-center'>
+            <div className='pr-10 md:px-36 flex justify-center'>
                 <ResponsiveContainer width="90%" height="100%" aspect={3}>
                     <AreaChart width={500} height={500} data={assignmentMarks} >
                         <CartesianGrid stroke="#f5f5f5" />
@@ -84,9 +84,6 @@ const Statistics = () => {
                         <Tooltip content={<CustomTooltip />} ></Tooltip>
                         <Legend></Legend>
                         <Area type="monotone" dataKey="marks" fill="#8884d8" stroke="#8884d8" />
-                        <Bar dataKey="marks" barSize={20} fill="#413ea0"></Bar>
-                        <Line type="monotone" dataKey="marks" stroke="#ff7300" />
-                        <Scatter dataKey="cnt" fill="red" />
                     </AreaChart>
                 </ResponsiveContainer>
             </div>

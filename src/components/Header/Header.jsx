@@ -5,7 +5,7 @@ import Navbar from '../Navbar/Navbar';
 
 const Header = ({ props }) => {
     return (
-        <div className='job-details-banner pb-16 mb-16 relative'>
+        <div className='job-details-banner pb-5 mb-10 relative'>
             <img className='absolute top-0 right-0' src={VectorTop} alt="" />
             <Navbar></Navbar>
             <h1 className='my-20 text-center text-2xl font-bold text-black'>{props}</h1>
