@@ -4,7 +4,7 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className='flex justify-between'>
+        <div className='md:flex justify-between'>
             <div className='flex items-center'>
                 <div>
                     <h1 className='font-semibold text-6xl text-black leading-[70px] my-10'>
