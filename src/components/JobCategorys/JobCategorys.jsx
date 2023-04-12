@@ -5,15 +5,11 @@ const JobCategorys = () => {
 
     const [categorys, setCategorys] = useState([]);
 
-    console.log(categorys, "line 8")
-
     useEffect(() => {
         fetch('categorys.json')
             .then(res => res.json())
             .then(data => setCategorys(data))
     }, [])
-
-    console.log(categorys, "line 16")
 
 
     return (

@@ -3,8 +3,7 @@
         "id": 1,
         "job_info": {
             "job_title": "Front-End Developer",
-            "category": "Social Media Marketing",
-            "category_icon": "../src/assets/Icons/data.png"
+            "category": "Social Media Marketing"
         },
         "company": {
             "name": "Airbnb",
@@ -30,8 +29,7 @@
         "id": 2,
         "job_info": {
             "job_title": "Data Analyst",
-            "category": "Data Science",
-            "category_icon": "../src/assets/Icons/data-science.svg"
+            "category": "Data Science"
         },
         "company": {
             "name": "Tesla",
@@ -57,8 +55,7 @@
         "id": 3,
         "job_info": {
             "job_title": "Software Engineer",
-            "category": "Information Technology",
-            "category_icon": "../src/assets/Icons/engineering.png"
+            "category": "Information Technology"
         },
         "company": {
             "name": "Google",
@@ -84,8 +81,7 @@
         "id": 4,
         "job_info": {
             "job_title": "Product Manager",
-            "category": "Business",
-            "category_icon": "../src/assets/Icons/accounts.png"
+            "category": "Business"
         },
         "company": {
             "name": "Amazon",
@@ -111,8 +107,7 @@
         "id": 5,
         "job_info": {
             "job_title": "Sales Representative",
-            "category": "Sales",
-            "category_icon": "../src/assets/Icons/sales.png"
+            "category": "Sales"
         },
         "company": {
             "name": "Microsoft",
@@ -138,8 +133,7 @@
         "id": 6,
         "job_info": {
             "job_title": "iOS Developer",
-            "category": "Software Development",
-            "category_icon": "../src/assets/Icons/engineering.png"
+            "category": "Software Development"
         },
         "company": {
             "name": "Apple",

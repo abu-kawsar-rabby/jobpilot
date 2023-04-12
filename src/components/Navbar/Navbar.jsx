@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,18 +25,18 @@ const Navbar = () => {
             </div>
             <div className={`w-full text-center block flex-grow lg:flex lg:items-center lg:w-auto ${isMenuOpen ? 'block' : 'hidden'}`}>
                 <div className='text-sm lg:flex-grow'>
-                    <Link to='/' className='text-lg block mt-4 lg:inline-block lg:mt-0 hover:text-blue-400 mr-4' onClick={toggleMenu}>
+                    <ActiveLink to='/' onClick={toggleMenu}>
                         Home
-                    </Link>
-                    <Link to='/statistics' className='text-lg block mt-4 lg:inline-block lg:mt-0 hover:text-blue-400 mr-4' onClick={toggleMenu}>
+                    </ActiveLink>
+                    <ActiveLink to='/statistics' onClick={toggleMenu}>
                         Statistics
-                    </Link>
-                    <Link to='/applied_jobs' className='text-lg block mt-4 lg:inline-block lg:mt-0 hover:text-blue-400 mr-4' onClick={toggleMenu}>
+                    </ActiveLink>
+                    <ActiveLink to='/applied_jobs' onClick={toggleMenu}>
                         Applied Jobs
-                    </Link>
-                    <Link to='/blog' className='text-lg block mt-4 lg:inline-block lg:mt-0 hover:text-blue-400' onClick={toggleMenu}>
+                    </ActiveLink>
+                    <ActiveLink to='/blog' className='text-lg block mt-4 lg:inline-block lg:mt-0 hover:text-blue-400' onClick={toggleMenu}>
                         Blog
-                    </Link>
+                    </ActiveLink>
                 </div>
                 <div>
                     <button className='inline-block leading-none py-4 hover:border-transparent mt-5 hover:bg-blue-800 lg:mt-0' onClick={toggleMenu}>

@@ -1,9 +1,8 @@
 import React from 'react';
-import googleimg from '../../assets/Logo/google-1.png';
 import locationicon from '../../assets/Icons/Location_Icon.png';
 import dollaricon from '../../assets/Icons/dollar_black.png';
 import './Job.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Job = ({ job }) => {
@@ -24,8 +23,8 @@ const Job = ({ job }) => {
             <h2 className='text-bold mt-3 text-black'>{job_title}</h2>
             <p className='font-semibold'>{name}</p>
             <div className="link my-4">
-                <a href="">{workplace}</a>
-                <a href="">{work_type}</a>
+                <Link href="">{workplace}</Link>
+                <Link href="">{work_type}</Link>
             </div>
             <div className="flex gap-3">
                 <p className='my-2 flex font-semibold'>
