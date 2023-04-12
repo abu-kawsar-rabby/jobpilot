@@ -9,7 +9,6 @@ const AppliedJobs = () => {
     const jobsList = getAppliedJobList();
 
     const [workplaceFilter, setWorkplaceFilter] = useState([]);
-    console.log(workplaceFilter, "12-line")
 
 
     const handleWorkplaceChange = (event) => {

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='footer-container mt-20 px-5 md:px-36 pt-10 pb-3'>
             <div className='footer-content'>
                 <div>
-                    <h1 className='text-white text-3xl font-bold'>JobPilot</h1>
+                    <a href="/"><h1 className='text-white text-3xl font-bold'>JobPilot</h1></a>
                     <p className='my-5 w-3/4 list'>
                         There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.
                     </p>
