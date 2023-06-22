@@ -16,7 +16,7 @@ netlify : https://earnest-fairy-fc3b61.netlify.app
 
 ## Installation
 
-1. Clone the repository https://github.com/Porgramming-Hero-web-course/b7a9-career-hub-abu-kawsar-rabby
+1. Clone the repository `https://github.com/abu-kawsar-rabby/jobpilot`
 2. Install the dependencies with `npm install`
 3. Start the development server with `npm start`
 
@@ -47,7 +47,7 @@ netlify : https://earnest-fairy-fc3b61.netlify.app
 
 ## Support
 
-Email: live@support.com.
+Email: abu.kawsar.man@gmail.com.
 
 
 
